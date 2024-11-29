@@ -14,7 +14,7 @@ from langchain.prompts import PromptTemplate
 
 
 # Set up the Google Gemini API
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyC1yV_iSZ03ZeODRwXAwlj2Tmho717pku0'
+os.environ['GOOGLE_API_KEY'] = '#################################################'
 load_dotenv()
 genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
 
@@ -106,7 +106,7 @@ def user_input(user_question):
 # Main Streamlit app
 def main():
     st.set_page_config("Chat PDF")
-    st.header("Chat with PDF using Gemini 💁")
+    st.header("Chat with PDF💁")
 
     user_question = st.text_input("Ask a Question from the PDF Files")
 
